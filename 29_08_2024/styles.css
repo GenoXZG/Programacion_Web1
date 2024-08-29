@@ -1,0 +1,19 @@
+.container{
+   text-align: center;
+}
+.imagen1{
+    width: 500px;
+    border: 5px solid red;
+}
+.imagen2{
+    width: 500px;
+}
+
+.nombre{
+    background-color: blue;
+    color: blueviolet;
+}
+
+.tabla{
+    width: 100%;
+}
