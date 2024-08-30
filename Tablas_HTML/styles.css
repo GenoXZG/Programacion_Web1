@@ -1,0 +1,107 @@
+:root{
+    --fuente: "New Amsterdam", arial; 
+    --encabezado: black;
+    --informacion: #e13378 ;
+    --programacion:#000451 ;
+    --administracion: #45ad8f ;
+    --electricidad:#f40a0a ;
+
+}
+
+
+
+.tabla{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    border: 3px solid black;
+    border-collapse: separate;
+    border-spacing: 4px;
+    color: white;
+    font-size: 20px;
+    table-layout: fixed;
+    font-family: var(--fuente);
+    border-radius: 10px;
+}
+
+.tabla td{
+    border-radius: 5px;
+}
+
+.tabla td:empty{
+    background-color: black;
+}
+
+
+
+.tabla__encabezado td{
+    padding: 5px;
+    font-weight: bold;
+    background-color: var(--encabezado);
+    color: white;
+}
+
+.tabla__encabezado--materia{
+    width: 200px;
+}
+.tabla__encabezado--grupo{
+    width: 40px;
+}
+
+.tabla__encabezado--profesor{
+    width: 150px;
+}
+
+
+.tabla__contenido td{
+    padding: 10px;
+    font-size: 18px;
+}
+.tabla__contenido--programacion{
+    background-color: var(--programacion);
+}
+.tabla__contenido--administracion{
+    background-color: var(--administracion);
+}
+.tabla__contenido--electricidad{
+    background-color: var(--electricidad);
+}
+.tabla__contenido--informacion{
+    background-color: var(--informacion);
+}
+
+.tabla__contenido--grupo{
+    background-color:#8268f0;
+}
+.color{
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-evenly;
+}
+
+.color div{
+    margin: 8px 0;
+    border-radius: 5px;
+}
+
+.color p{
+    font-size: 20px;
+    font-family: var(--fuente);
+}
+.color--programacion{
+    width: 50px;
+    height: 50px;
+    background-color: var(--programacion);
+}
+
+.color--electricidad{
+    width: 50px;
+    height: 50px;
+    background-color: var(--electricidad);
+}
+
+.color--administracion{
+    width: 50px;
+    height: 50px;
+    background-color: var(--administracion);
+}
