@@ -1,0 +1,155 @@
+<<<<<<< HEAD
+body{
+    background-color: rgb(15, 127, 139 );
+    font-family: 'Helvetica';
+    padding: 5em;
+}
+
+p{
+    font-size: 25px;
+}
+
+.imagen{
+    height: 300px;
+    width: 250px;
+    border-radius: 5px;
+}
+
+
+.fondoBlanco{
+    background-color: aliceblue;
+}
+
+.fondoAzul{
+    background-color: blue;
+}
+
+.fondoAzul li, a{
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+}
+
+.fondoNegro{
+    background-color: black;
+}
+.texto1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+    color: #8b0f41;
+}
+
+.texto2{
+    font-size: 1em;
+    color: white;
+    text-align: justify;
+    background-color: #590f8b;
+}
+
+.texto3{
+    text-align: center;
+    font-weight: bold;
+}
+
+.separacion{
+    padding: 5em;
+}
+
+.borde{
+    border: 10px solid white;
+    border-radius: 5px;
+}
+
+.borde td{
+    border-radius: 5px;
+}
+
+.footer{
+    margin-top: 10px;
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+}
+=======
+body{
+    background-color: rgb(15, 127, 139 );
+    font-family: 'Helvetica';
+    padding: 5em;
+}
+
+p{
+    font-size: 25px;
+}
+
+.imagen{
+    height: 300px;
+    width: 250px;
+    border-radius: 5px;
+}
+
+
+.fondoBlanco{
+    background-color: aliceblue;
+}
+
+.fondoAzul{
+    background-color: blue;
+}
+
+.fondoAzul li, a{
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+}
+
+.fondoNegro{
+    background-color: black;
+}
+.texto1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+    color: #8b0f41;
+}
+
+.texto2{
+    font-size: 1em;
+    color: white;
+    text-align: justify;
+    background-color: #590f8b;
+}
+
+.texto3{
+    text-align: center;
+    font-weight: bold;
+}
+
+.separacion{
+    padding: 5em;
+}
+
+.borde{
+    border: 10px solid white;
+    border-radius: 5px;
+}
+
+.borde td{
+    border-radius: 5px;
+}
+
+.footer{
+    margin-top: 10px;
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+}
+>>>>>>> 9074c81fb9359b376452aea6a7e6b8823c22a4e3
