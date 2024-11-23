@@ -1,0 +1,325 @@
+body{
+    font-family: 'Play', sans-serif;
+    text-align: center;
+}
+
+@property --angle{
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+
+}
+
+@keyframes spin{
+    from{
+       --angle: 0deg;
+    }
+    to{
+        --angle: 360deg;
+    }
+}
+
+.header{
+    color: white;
+    background-color: black;
+    height: 100px;
+    text-align: right;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Play', sans-serif
+}
+.header h5{
+    margin: 30px 0px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.header span{
+    color: cadetblue;
+}
+
+.header a{
+    background-color:white;
+    border-radius: 10px;
+    color:  black;
+    font-weight: bold;
+    font-size: 15px;
+    display: flex; /* Flexbox para centrar el texto */
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    padding: 0px 20px;
+    margin: 20px 0px;
+    position: relative;
+}
+
+.header a:hover{
+    background-color: red;
+    color: white;
+    transition: .7s;
+}
+
+
+.container{
+    width: 650px;
+    height: 650px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    margin: 160px auto;
+    border-radius: 15px;
+    text-align: center;
+    position: relative;
+}
+
+.container p{
+    margin: 0 200px;
+}
+.container button{
+    margin: 20px 200px;
+}
+
+  /* label color */
+.input-field label {
+     color: black;
+}
+   /* icon prefix focus color */
+.input-field .prefix.active {
+     color: #000;
+}
+
+
+.btn{
+    background-color: #000;
+}
+ 
+.container::after, .container::before{
+    content:'';
+    position: absolute;
+    height: 660px;
+    width: 660px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: conic-gradient(from var(--angle), transparent 50%, blue, red, blue);
+    z-index: -1;
+    border-radius: 15px;
+    animation: spin 3s linear infinite;
+}
+
+.container::before{
+    filter: blur(1.5rem);
+    opacity: 0.8;
+}
+
+
+
+.container_tabla{
+    padding: 10px;
+    margin: 100px 50px;
+    border-radius: 10px;
+    position: relative;
+}
+
+
+
+.tabla{
+    height: 400px;
+    width: 100%;
+    margin: 0 auto;  
+    border-collapse: separate;
+    border-spacing: 10px;
+}
+.centered th {
+    text-align: center;
+    color:white;
+    font-weight: bold;
+    background-color: black;
+    padding: 3px 10px;
+    border-radius: 5px;
+}
+
+.centered td{
+    font-weight: bold;
+    color: black;
+    background-color: white;
+}
+
+
+
+.edit{
+    background-color: green !important; 
+    height: 44px !important;   
+    width: 44px !important;   
+    border-radius: 10px !important;
+}
+
+.btn-floating{
+    padding: 8px !important;
+}
+
+.delete{
+    background-color: red !important;
+    height: 44px !important;   
+    width: 44px !important;   
+    border-radius: 10px !important;
+}
+
+.opciones{
+    margin: 10px 0px;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.opciones a{
+    background-color:black;
+    width: 200px;
+    height: 60px;
+    border-radius: 10px;
+    color:  white;
+    font-weight: bold;
+    font-size: 15px;
+    display: flex; /* Flexbox para centrar el texto */
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    position: relative;
+    
+}
+
+.opciones a::after, .opciones a::before{
+    content:'';
+    position: absolute;
+    height: 70px;
+    width: 210px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: conic-gradient(from var(--angle), transparent 50%, black, red, black);
+    z-index: -1;
+    border-radius: 15px;
+    animation: spin 3s linear infinite;
+}
+
+.opciones a::before{
+    filter: blur(1.5rem);
+    opacity: 1;
+}
+
+/* add platillo */
+
+.add_a:hover a{
+    color: crimson;
+    transition: .6s;
+}
+.add_label{
+    font-size: 17px;
+    color: black;
+
+}
+
+/* delete platillos */
+
+.container_delete{
+    color: white;
+    background-color: #000;
+    margin: 300px 300px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+/* edit platillo */
+
+.container_edit{
+    height: 700px;
+    width: 700px;
+    margin: 50px auto;
+    position: relative;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.container_edit::after, .container_edit::before{
+    content:'';
+    position: absolute;
+    height: 710px;
+    width: 710px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: conic-gradient(from var(--angle), transparent 50%, green, red, green);
+    z-index: -1;
+    border-radius: 15px;
+    animation: spin 3s linear infinite;
+}
+
+.container_edit::before{
+    filter: blur(1.5rem);
+    opacity: 0.8;
+}
+
+
+
+
+
+/* footer */
+
+body{
+    margin:0;
+    overflow-x:hidden;
+    }
+    
+    .footer{
+    background:#000;
+    padding:30px 0px;
+    font-family: 'Play', sans-serif;
+    text-align:center;
+    }
+    
+    .footer .rowf{
+    width:100%;
+    margin:1% 0%;
+    padding:0.6% 0%;
+    color:gray;
+    font-size:0.8em;
+    }
+    
+    .footer .rowf a{
+    text-decoration:none;
+    color:gray;
+    transition:0.5s;
+    }
+    
+    .footer .rowf a:hover{
+    color:#fff;
+    }
+    
+    .footer .rowf ul{
+    width:100%;
+    }
+    
+    .footer .rowf ul li{
+    display:inline-block;
+    margin:0px 30px;
+    }
+    
+    .footer .rowf a i{
+    font-size:2em;
+    margin:0% 1%;
+    }
+    
+    @media (max-width:720px){
+    .footer{
+    text-align:left;
+    padding:5%;
+    }
+    .footer .rowf ul li{
+    display:block;
+    margin:10px 0px;
+    text-align:left;
+    }
+    .footer .rowf a i{
+    margin:0% 3%;
+    }
+    }

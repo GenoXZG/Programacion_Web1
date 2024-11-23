@@ -1,0 +1,23 @@
+  echo "<table border = '2' >
+    
+        <tr>
+            <th> Nombre </th>
+            <th> Email </th>
+            <th> Password </th>
+        </tr>";
+
+    
+    
+
+    if ($count > 0){
+        while( $row = mysqli_fetch_assoc($res_select)){
+            
+         echo "<tr>";
+         echo "<td>". $row['nombre'] ."</td>";
+         echo "<td>". $row['email'] ."</td>";
+         echo "<td>". $row['password'] ."</td>";
+         echo "</tr>";
+
+        }
+        echo "</table>";
+    }

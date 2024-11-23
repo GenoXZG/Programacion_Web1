@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../materialize.min.css">
+    <title>Agregar usuario</title>
+</head>
+<body>
+    <div class="header">
+        <h5>PORFAVOR COMPLETA LOS SIGUIENTES CAMPOS  </h5>
+    </div>
+    <section class="container_edit">
+        <h2>REGISTRO</h2>
+        <div class="row">
+            <form class="col s12" action="../addUsuario.php" method = "POST">
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="medium material-icons prefix">account_circle</i>
+                        <input type="text" id="new_user" name="new_user" required>
+                        <label for="new_user"> Nombre de usuario: </label>
+                    </div>
+                </div>
+    
+                <div class="row">
+                    <div class="input-field col s12" >
+                        <i class="medium material-icons prefix">email</i>
+                        <input type="email" id="new_email" name="new_email" required>
+                        <label for="new_email"> Correo Electronico: </label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12" >
+                        <i class="medium material-icons prefix">edit</i>
+                        <input type="password" id="new_password"  name="new_password" required>
+                        <label for="new_password" > Contraseña: </label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12" >
+                        <i class="medium material-icons prefix">repeat</i>
+                        <input type="password" id="new_password_confirm" name="new_password_confirm" required>
+                        <label for="new_password_confirm"> Confirma tu contraseña: </label>
+                    </div>
+                </div>
+                <button class="btn waves-effect waves-light" type="submit"> Confirmar Registro <i class="material-icons right">send</i> </button>
+            </form>
+        </div>
+            <a href="../index.html">Pagina de Inicio</a>
+        </div>
+    </section>
+    <footer>
+        <div class="footer">
+            <div class="rowf">
+                <a href="https://github.com/GenoXZG"><i class="fa fa-github"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+            </div>
+
+            <div class="rowf">
+                <ul>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">Our Services</a></li>
+                    <li><a href="#">Career</a></li>
+                </ul>
+            </div>
+
+            <div class="rowf">
+                GENOX Copyright © 2021 - All rights reserved 
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="../Js/materialize.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
